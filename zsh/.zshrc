@@ -321,6 +321,11 @@ alias ll='ls -lGh'
 
 #git
 alias g='git'
+function git_current_branch_name()
+{
+  git branch | grep '^\*' | sed 's/^\* *//'
+}
+alias -g B='"$(git_current_branch_name)"'
 
 #vim
 alias vi='vim'

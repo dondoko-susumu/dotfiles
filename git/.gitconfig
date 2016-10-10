@@ -13,6 +13,8 @@
 	ui = auto
 [push]
 	default = simple
+[commit]
+  template = ~/.commit_template
 [alias]
   co = checkout
   cob = checkout -b
