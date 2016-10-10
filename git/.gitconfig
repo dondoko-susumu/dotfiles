@@ -1,0 +1,38 @@
+[user]
+	name = Ken Kubota
+	email = kkbt2003@gmail.com
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[core]
+	editor = vim -f
+[ghq]
+  root = ~/src
+[color]
+	ui = auto
+[push]
+	default = simple
+[alias]
+  co = checkout
+  cob = checkout -b
+  s = status
+  br = branch
+  cm = commit
+  sh = stash
+  shu = stash -u
+  shp = stash pop
+  l = log --oneline --decorate --color --graph
+  la = log --oneline --decorate --color --graph --all
+  pl = pull
+  ps = push
+  d = diff
+  dc = diff --cached
+  fe = fetch --prune
+  stashes = stash list
+  unstage = reset -q HEAD --
+  discard = checkout --
+  uncommit = reset --mixed HEAD~
+  amend = commit --amend -v
+[http]
+  postBuffer = 524288000
