@@ -7,7 +7,7 @@ set columns=100
 " ウインドウの高さ
 set lines=52
 " カラー設定:
-colorscheme jellybeans
+colorscheme atom-dark-256
 " font
 " set guifont=Menlo\ Regular:h14
 " set guifont=Ricty\ Regular:h18

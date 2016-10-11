@@ -4,6 +4,12 @@ export LANG=ja_JP.UTF-8
 #vim
 export EDITOR=vim
 
+#Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+#MacVim
+export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
+
 #prompt
 # PROMPT="%n@%m%# "
 PROMPT="%# "
@@ -85,7 +91,6 @@ zstyle ':chpwd:*' recent-dirs-max 200
 zstyle ":chpwd:*" recent-dirs-default true
 
 # Ctrl+wで単語の区切りを削除
-# なぜか/区切りのオプションが効かない
 autoload -Uz select-word-style
 select-word-style default
 zstyle ':zle:*' word-chars ' _-./=;@:{},|'
@@ -328,6 +333,7 @@ function git_current_branch_name()
 alias -g B='"$(git_current_branch_name)"'
 
 #vim
+alias vim='mvim'
 alias vi='vim'
 
 #zmv

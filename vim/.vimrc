@@ -1,4 +1,3 @@
-"------------------------------------------------------------
 " Vi互換モードをオフ（Vimの拡張機能を有効）
 set nocompatible
 
@@ -20,8 +19,9 @@ call dein#add('ap/vim-css-color')
 call dein#add('ctrlpvim/ctrlp.vim')
 call dein#add('tmux-plugins/vim-tmux')
 call dein#add('sjl/gundo.vim')
-call dein#add('nanotech/jellybeans.vim')
 call dein#add('haya14busa/incsearch.vim')
+call dein#add('keith/swift.vim')
+call dein#add('gosukiwi/vim-atom-dark')
 
 call dein#end()
 
@@ -146,7 +146,7 @@ imap <C-n>  <Down>
 " ステータスラインを常に表示する
 set laststatus=2
 let g:lightline = {
-  \ 'colorscheme' : 'jellybeans' ,
+  \ 'colorscheme' : 'wombat' ,
   \ 'active' : {
   \   'left' : [['mode', 'paste'], ['fugitive', 'filename', 'modified']]
   \ },
@@ -214,7 +214,8 @@ let g:vimshell_force_overwrite_statusline= 0
 autocmd CursorMoved ControlP let w:lightline = 0
 
 "colorscheme setting
-colorscheme jellybeans
+set t_Co=256
+colorscheme atom-dark-256
 
 "------------------------------------------------------------
 " 全角スペースを表示
