@@ -34,7 +34,7 @@ setopt hist_ignore_space
 setopt hist_reduce_blanks
 
 # zsh-completions 補完を強化
-fpath=($HOME/src/github.com/zsh-users/zsh-completions/src(N-/) $fpath)
+fpath=($HOME/.ghq/github.com/zsh-users/zsh-completions/src(N-/) $fpath)
 
 #補完候補が複数あるときに自動的に一覧表示する
 setopt auto_menu
@@ -100,11 +100,12 @@ zstyle ':zle:*' word-style unspecified
 autoload -Uz zmv
 
 # go path
-export GOPATH=$HOME
+export GOPATH=~/.go
+export PATH=$PATH:$GOPATH/bin
 
 # Antigen zshプラグイン管理
-if [[ -f $HOME/src/github.com/zsh-users/antigen/antigen.zsh ]]; then
-  source $HOME/src/github.com/zsh-users/antigen/antigen.zsh
+if [[ -f $HOME/.ghq/github.com/zsh-users/antigen/antigen.zsh ]]; then
+  source $HOME/.ghq/github.com/zsh-users/antigen/antigen.zsh
   antigen bundle mollifier/anyframe
   antigen bundle zsh-users/zsh-syntax-highlighting
   antigen apply
