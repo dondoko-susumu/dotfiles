@@ -127,6 +127,7 @@ bindkey '^xp' anyframe-widget-put-history
 bindkey '^x^p' anyframe-widget-put-history
 
 # ghqコマンドで管理しているリポジトリに移動する(ghqが必要)
+bindkey '^]' anyframe-widget-cd-ghq-repository
 bindkey '^xg' anyframe-widget-cd-ghq-repository
 bindkey '^x^g' anyframe-widget-cd-ghq-repository
 
@@ -348,3 +349,6 @@ alias -g G='| grep'
 alias -g N='> /dev/null'
 alias -g V='| vim -R -'
 alias -g P=' --help | less'
+
+export NVM_DIR="/Users/kubotaken/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
