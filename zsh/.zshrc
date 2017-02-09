@@ -101,7 +101,7 @@ autoload -Uz zmv
 
 # go path
 export GOPATH=~/.go
-export PATH=$PATH:$GOPATH/bin
+export PATH="$PATH:$HOME/.rvm/bin:$GOPATH/bin" # Add RVM to PATH for scripting
 
 # Antigen zshプラグイン管理
 if [[ -f $HOME/.ghq/github.com/zsh-users/antigen/antigen.zsh ]]; then
@@ -356,3 +356,5 @@ export NVM_DIR="/Users/kubotaken/.nvm"
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
