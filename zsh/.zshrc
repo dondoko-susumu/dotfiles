@@ -10,6 +10,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 #MacVim
 export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
 
+#Python
+export PATH="$HOME/Library/Python/3.6/bin:$PATH"
+
 #prompt
 # PROMPT="%n@%m%# "
 PROMPT="%# "
