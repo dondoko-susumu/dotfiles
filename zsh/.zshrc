@@ -363,4 +363,8 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
