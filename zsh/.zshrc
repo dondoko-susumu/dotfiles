@@ -367,4 +367,6 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+export PATH="$HOME/.pyenv/shims:$PATH"
+
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
