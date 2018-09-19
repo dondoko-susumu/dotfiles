@@ -11,7 +11,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/MacVim.app/Contents/MacOS:$PATH"
 
 #Python
-export PATH="$HOME/Library/Python/3.6/bin:$PATH"
+# export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
@@ -367,6 +367,17 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-export PATH="$HOME/.pyenv/shims:$PATH"
+# uninstall pyenv 2018/09/13
+# export PATH="$HOME/.pyenv/shims:$PATH"
+
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
+export PATH="$HOME/.local/bin:$PATH"
+
+# added by Anaconda3 5.2.0 installer
+export PATH="/Users/kubotaken/anaconda3/bin:$PATH"
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
