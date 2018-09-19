@@ -380,4 +380,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # added by Anaconda3 5.2.0 installer
 export PATH="/Users/kubotaken/anaconda3/bin:$PATH"
 
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
