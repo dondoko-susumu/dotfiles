@@ -386,4 +386,7 @@ export PATH="/Users/kubotaken/anaconda3/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 
+# MySQL
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
